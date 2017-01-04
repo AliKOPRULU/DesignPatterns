@@ -8,10 +8,6 @@ namespace DesignPattern.CreationalPatterns
 {
     class AbstractFactoryProduct
     {
-    }
-
-    class MainApp
-    {
         public static void Main()
         {
             AbstractFactory factory1 = new ConcreateFactory1();
