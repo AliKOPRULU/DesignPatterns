@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryProduct.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
