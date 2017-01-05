@@ -48,6 +48,8 @@
     <Compile Include="CreationalPatterns\AbstractFactoryProduct.cs" />
     <Compile Include="CreationalPatterns\BuilderStructural.cs" />
     <Compile Include="CreationalPatterns\BuilderVehicle.cs" />
+    <Compile Include="CreationalPatterns\SingletonLoadBalancer.cs" />
+    <Compile Include="CreationalPatterns\SingletonLoadBalancer2.cs" />
     <Compile Include="CreationalPatterns\SingletonStructural.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
