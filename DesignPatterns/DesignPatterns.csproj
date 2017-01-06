@@ -49,6 +49,7 @@
     <Compile Include="CreationalPatterns\BuilderComputer.cs" />
     <Compile Include="CreationalPatterns\BuilderStructural.cs" />
     <Compile Include="CreationalPatterns\BuilderVehicle.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethodStructural.cs" />
     <Compile Include="CreationalPatterns\SingletonLoadBalancer.cs" />
     <Compile Include="CreationalPatterns\SingletonLoadBalancer2.cs" />
     <Compile Include="CreationalPatterns\SingletonStructural.cs" />
