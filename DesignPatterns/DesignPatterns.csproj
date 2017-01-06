@@ -58,6 +58,9 @@
     <Compile Include="CreationalPatterns\SingletonStructural.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StructuralPatterns\Adapter\AdapterChemistry.cs" />
+    <Compile Include="StructuralPatterns\Adapter\AdapterSavas.cs" />
+    <Compile Include="StructuralPatterns\Adapter\AdapterSiparis.cs" />
     <Compile Include="StructuralPatterns\Adapter\AdapterStructural.cs" />
   </ItemGroup>
   <ItemGroup>
