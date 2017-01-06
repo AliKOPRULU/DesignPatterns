@@ -8,7 +8,7 @@ namespace DesignPatterns.CreationalPatterns
 {
     class AbstractFactoryAnimal
     {
-        public static void Main()
+        public static void Main(string[] args)
         {
             ContinentFactory africa = new AfricaFactory();//Continent: Kıta, anakara
             AnimalWorld world = new AnimalWorld(africa);
