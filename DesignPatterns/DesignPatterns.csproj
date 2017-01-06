@@ -46,6 +46,7 @@
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryProduct.cs" />
+    <Compile Include="CreationalPatterns\BuilderComputer.cs" />
     <Compile Include="CreationalPatterns\BuilderStructural.cs" />
     <Compile Include="CreationalPatterns\BuilderVehicle.cs" />
     <Compile Include="CreationalPatterns\SingletonLoadBalancer.cs" />
