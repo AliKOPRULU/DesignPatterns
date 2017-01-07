@@ -62,6 +62,7 @@
     <Compile Include="StructuralPatterns\Adapter\AdapterSavas.cs" />
     <Compile Include="StructuralPatterns\Adapter\AdapterSiparis.cs" />
     <Compile Include="StructuralPatterns\Adapter\AdapterStructural.cs" />
+    <Compile Include="StructuralPatterns\Bridge\BridgeStructural.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
