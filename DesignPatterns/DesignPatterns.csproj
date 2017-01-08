@@ -62,8 +62,10 @@
     <Compile Include="StructuralPatterns\Adapter\AdapterSavas.cs" />
     <Compile Include="StructuralPatterns\Adapter\AdapterSiparis.cs" />
     <Compile Include="StructuralPatterns\Adapter\AdapterStructural.cs" />
+    <Compile Include="StructuralPatterns\Bridge\BridegeGangOfFour.cs" />
     <Compile Include="StructuralPatterns\Bridge\BridgeKargo.cs" />
     <Compile Include="StructuralPatterns\Bridge\BridgeStructural.cs" />
+    <Compile Include="StructuralPatterns\Bridge\BridgeVideo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

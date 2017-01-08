@@ -10,14 +10,14 @@ namespace DesignPatterns.StructuralPatterns.Bridge
     {
         public static void Main(string[] args)
         {
-            Abstraction ab = new RefinedAbstraction();
+            AbstractionS ab = new RefinedAbstractionS();
 
             // Set implementation and call
-            ab.Implementor = new ConcreteImplementorA();
+            ab.ImplementorS = new ConcreteImplementorSA();
             ab.Operation();
 
             // Change implemention and call
-            ab.Implementor = new ConcreteImplementorB();
+            ab.ImplementorS = new ConcreteImplementorSB();
             ab.Operation();
 
 
@@ -26,48 +26,48 @@ namespace DesignPatterns.StructuralPatterns.Bridge
     }
 
 
-    class Abstraction
+    class AbstractionS
     {
-        protected Implementor implementor;
+        protected ImplementorS ImplementorS;
 
         // Property
-        public Implementor Implementor
+        public ImplementorS ImplementorS
         {
-            set { implementor = value; }
+            set { ImplementorS = value; }
         }
 
         public virtual void Operation()
         {
-            implementor.Operation();
+            ImplementorS.Operation();
         }
     }
 
-    abstract class Implementor
+    abstract class ImplementorS
     {
         public abstract void Operation();
     }
 
-    class RefinedAbstraction : Abstraction
+    class RefinedAbstractionS : AbstractionS
     {
         public override void Operation()
         {
-            implementor.Operation();
+            ImplementorS.Operation();
         }
     }
 
-    class ConcreteImplementorA : Implementor
+    class ConcreteImplementorSA : ImplementorS
     {
         public override void Operation()
         {
-            Console.WriteLine("ConcreteImplementorA Operation");
+            Console.WriteLine("ConcreteImplementorSA Operation");
         }
     }
 
-    class ConcreteImplementorB : Implementor
+    class ConcreteImplementorSB : ImplementorS
     {
         public override void Operation()
         {
-            Console.WriteLine("ConcreteImplementorB Operation");
+            Console.WriteLine("ConcreteImplementorSB Operation");
         }
     }
 

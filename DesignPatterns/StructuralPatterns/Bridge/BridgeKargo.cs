@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DesignPatterns.StructuralPatterns.Bridge
-{
+{//http://ayhanugur.com/2015/03/26/kopru-tasarim-deseni-bridge-design-pattern/
     class BridgeKargo
     {
         public static void Main(string[] args)
