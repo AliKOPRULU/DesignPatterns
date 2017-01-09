@@ -73,6 +73,8 @@
     <Compile Include="StructuralPatterns\Decorator\DecoratorBook.cs" />
     <Compile Include="StructuralPatterns\Decorator\DecoratorStructural.cs" />
     <Compile Include="StructuralPatterns\Decorator\DecoratorTopcuBataryasi.cs" />
+    <Compile Include="StructuralPatterns\Facade\FacedeKimlikTCKontrol.cs" />
+    <Compile Include="StructuralPatterns\Facade\FacedeStructural.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
