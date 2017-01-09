@@ -69,6 +69,7 @@
     <Compile Include="StructuralPatterns\Composite\CompositeCalisan.cs" />
     <Compile Include="StructuralPatterns\Composite\CompositeElements.cs" />
     <Compile Include="StructuralPatterns\Composite\CompositeStructural.cs" />
+    <Compile Include="StructuralPatterns\Decorator\DecoratorStructural.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
