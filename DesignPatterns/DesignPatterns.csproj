@@ -69,10 +69,14 @@
     <Compile Include="StructuralPatterns\Composite\CompositeCalisan.cs" />
     <Compile Include="StructuralPatterns\Composite\CompositeElements.cs" />
     <Compile Include="StructuralPatterns\Composite\CompositeStructural.cs" />
+    <Compile Include="StructuralPatterns\Decorator\CarDecorator.cs" />
+    <Compile Include="StructuralPatterns\Decorator\DecoratorBook.cs" />
     <Compile Include="StructuralPatterns\Decorator\DecoratorStructural.cs" />
+    <Compile Include="StructuralPatterns\Decorator\DecoratorTopcuBataryasi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="DecoratorTopcu.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

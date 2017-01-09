@@ -28,17 +28,17 @@ namespace DesignPatterns.StructuralPatterns.Bridge
 
     class AbstractionS
     {
-        protected ImplementorS ImplementorS;
+        protected ImplementorS implementorS;
 
         // Property
         public ImplementorS ImplementorS
         {
-            set { ImplementorS = value; }
+            set { implementorS = value; }
         }
 
         public virtual void Operation()
         {
-            ImplementorS.Operation();
+            implementorS.Operation();
         }
     }
 
@@ -51,7 +51,7 @@ namespace DesignPatterns.StructuralPatterns.Bridge
     {
         public override void Operation()
         {
-            ImplementorS.Operation();
+            implementorS.Operation();
         }
     }
 
