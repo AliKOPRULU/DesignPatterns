@@ -66,6 +66,7 @@
     <Compile Include="StructuralPatterns\Bridge\BridgeKargo.cs" />
     <Compile Include="StructuralPatterns\Bridge\BridgeStructural.cs" />
     <Compile Include="StructuralPatterns\Bridge\BridgeVideo.cs" />
+    <Compile Include="StructuralPatterns\Composite\CompositeStructural.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
