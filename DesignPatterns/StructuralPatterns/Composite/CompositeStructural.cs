@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.StructuralPatterns.Composite
 {
-    class CompositeStructural
-    {
+    class CompositeStructural//http://bidb.itu.edu.tr/seyirdefteri/blog/2013/09/08/bile%C5%9Fik-tasar%C4%B1m-kal%C4%B1b%C4%B1-(composite-design-pattern)
+    {//http://www.dofactory.com/net/composite-design-pattern
         public static void Main(string[] args)
         {
             //Create a tree structure
