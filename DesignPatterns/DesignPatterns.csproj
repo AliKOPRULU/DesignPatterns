@@ -45,7 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BehavioralPatterns\ChainofResponsibility\ChainofResponsibilityApprover.cs" />
     <Compile Include="BehavioralPatterns\ChainofResponsibility\ChainofResponsibilityLog.cs" />
+    <Compile Include="BehavioralPatterns\ChainofResponsibility\ChainofResponsibilityService.cs" />
     <Compile Include="BehavioralPatterns\ChainofResponsibility\ChainofResponsibilityStructural.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />
