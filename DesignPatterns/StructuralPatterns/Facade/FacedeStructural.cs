@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.StructuralPatterns.Facade
 {
-    class FacedeStructural
+    class FacedeSStructural
     {
         public static void Main(string[] args)
         {
-            Facede facede = new Facede();
+            FacedeS FacedeS = new FacedeS();
 
-            facede.MethodA();
-            facede.MethodB();
+            FacedeS.MethodA();
+            FacedeS.MethodB();
 
             Console.ReadKey();
         }
@@ -51,14 +51,14 @@ namespace DesignPatterns.StructuralPatterns.Facade
     }
 
     // The 'Facade' class
-    class Facede
+    class FacedeS
     {
         private SubSystemOne _one;
         private SubSystemTwo _two;
         private SubSystemThree _three;
         private SubSystemFour _four;
 
-        public Facede()
+        public FacedeS()
         {
             _one = new SubSystemOne();
             _two = new SubSystemTwo();

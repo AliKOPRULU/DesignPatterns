@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -76,11 +78,16 @@
     <Compile Include="StructuralPatterns\Facade\FacedeKimlikTCKontrol.cs" />
     <Compile Include="StructuralPatterns\Facade\FacedeMortgage.cs" />
     <Compile Include="StructuralPatterns\Facade\FacedeStructural.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\FlyweightDocument.cs" />
     <Compile Include="StructuralPatterns\Flyweight\FlyweightStructural.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\FlyweightWarGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="DecoratorTopcu.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TasarimDesenleriKaynaklar.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
