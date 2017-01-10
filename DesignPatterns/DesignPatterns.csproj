@@ -81,6 +81,7 @@
     <Compile Include="StructuralPatterns\Flyweight\FlyweightDocument.cs" />
     <Compile Include="StructuralPatterns\Flyweight\FlyweightStructural.cs" />
     <Compile Include="StructuralPatterns\Flyweight\FlyweightWarGame.cs" />
+    <Compile Include="StructuralPatterns\Proxy\ProxyStructural.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
