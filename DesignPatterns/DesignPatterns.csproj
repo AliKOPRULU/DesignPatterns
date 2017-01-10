@@ -74,6 +74,7 @@
     <Compile Include="StructuralPatterns\Decorator\DecoratorStructural.cs" />
     <Compile Include="StructuralPatterns\Decorator\DecoratorTopcuBataryasi.cs" />
     <Compile Include="StructuralPatterns\Facade\FacedeKimlikTCKontrol.cs" />
+    <Compile Include="StructuralPatterns\Facade\FacedeMortgage.cs" />
     <Compile Include="StructuralPatterns\Facade\FacedeStructural.cs" />
   </ItemGroup>
   <ItemGroup>
