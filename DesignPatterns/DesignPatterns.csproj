@@ -76,6 +76,7 @@
     <Compile Include="StructuralPatterns\Facade\FacedeKimlikTCKontrol.cs" />
     <Compile Include="StructuralPatterns\Facade\FacedeMortgage.cs" />
     <Compile Include="StructuralPatterns\Facade\FacedeStructural.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\FlyweightStructural.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
