@@ -10,7 +10,7 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
     {//Nonterminal değerlendirmeye alınmadı
         public static void Main(string[] args)
         {
-            Context c = new Context { HexValue = "ABCABB" };
+            ContextH c = new ContextH { HexValue = "ABCABB" };
             List<ITerminalExpression> ExpList = new List<ITerminalExpression>();
 
             foreach (char item in c.HexValue.ToCharArray())
@@ -41,7 +41,7 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
         }
     }
 
-    class Context
+    class ContextH
     {
         public string HexValue { get; set; }
         public int OndalikValue { get; set; }
@@ -49,38 +49,38 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
 
     interface ITerminalExpression
     {
-        void Interpret(Context context);
+        void Interpret(ContextH ContextH);
     }
 
     class TerminalIExpA : ITerminalExpression
     {
-        public void Interpret(Context context)
+        public void Interpret(ContextH ContextH)
         {
-            if (context.HexValue.Contains("A"))
+            if (ContextH.HexValue.Contains("A"))
             {
-                context.OndalikValue += 10;
+                ContextH.OndalikValue += 10;
             }
         }
     }
 
     class TerminalIExpB : ITerminalExpression
     {
-        public void Interpret(Context context)
+        public void Interpret(ContextH ContextH)
         {
-            if (context.HexValue.Contains("B"))
+            if (ContextH.HexValue.Contains("B"))
             {
-                context.OndalikValue += 11;
+                ContextH.OndalikValue += 11;
             }
         }
     }
 
     class TerminalIExpC : ITerminalExpression
     {
-        public void Interpret(Context context)
+        public void Interpret(ContextH ContextH)
         {
-            if (context.HexValue.Contains("C"))
+            if (ContextH.HexValue.Contains("C"))
             {
-                context.OndalikValue += 12;
+                ContextH.OndalikValue += 12;
             }
         }
     }
