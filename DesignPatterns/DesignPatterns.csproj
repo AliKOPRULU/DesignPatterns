@@ -55,6 +55,7 @@
     <Compile Include="BehavioralPatterns\Command\CommandStructural.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\InterpreterHextoTen.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\InterpreterProjectCost.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\InterpreterRomeNumber.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\InterpreterStructural.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />

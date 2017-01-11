@@ -35,36 +35,36 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
             return tree;
         }
 
-        static void RunExpression(Context context)
+        static void RunExpression(ContextC ContextC)
         {
-            foreach (RoleExpression expression in CreateExpressionTree(context.Formula))
+            foreach (RoleExpression expression in CreateExpressionTree(ContextC.Formula))
             {
-                expression.Interpret(context);// TerminalExpression tiplerine ait harf sembolleri buradaki metod çağrısındada gönderilebilir.
+                expression.Interpret(ContextC);// TerminalExpression tiplerine ait harf sembolleri buradaki metod çağrısındada gönderilebilir.
             }
-            Console.WriteLine("{0} için maliyet puanı {1}", context.Formula, context.TotalPoint);
+            Console.WriteLine("{0} için maliyet puanı {1}", ContextC.Formula, ContextC.TotalPoint);
         }
 
         public static void Main(string[] args)
         {
             Console.WriteLine("Architecture = 5, Consultant=10, Senior=15,Developer=20\n");
             // 1 Architect, 1 Consultan, 2 Senior Developer , 4 Junior Developer
-            Context context = new Context { Formula = "ACSSDDDD" };
+            ContextC ContextC = new ContextC { Formula = "ACSSDDDD" };
 
-            RunExpression(context);
-
-            // 1 Consultant, 1 Senior Developer, 2 Developer
-            context = new Context { Formula = "CSDD" };
-            RunExpression(context);
+            RunExpression(ContextC);
 
             // 1 Consultant, 1 Senior Developer, 2 Developer
-            context = new Context { Formula = "SD" };
-            RunExpression(context);
+            ContextC = new ContextC { Formula = "CSDD" };
+            RunExpression(ContextC);
+
+            // 1 Consultant, 1 Senior Developer, 2 Developer
+            ContextC = new ContextC { Formula = "SD" };
+            RunExpression(ContextC);
 
             Console.ReadKey();
         }
     }
 
-    class Context
+    class ContextC
     {
         public string Formula { get; set; }
         public int TotalPoint { get; set; }
@@ -73,7 +73,7 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
     // Expression
     abstract class RoleExpression
     {
-        public abstract void Interpret(Context context);
+        public abstract void Interpret(ContextC ContextC);
     }
 
     #region Terminal Expression Sınıfları
@@ -81,11 +81,11 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
     // TerminalExpression
     class ArchitectureExpression : RoleExpression
     {
-        public override void Interpret(Context context)
+        public override void Interpret(ContextC ContextC)
         {
-            if (context.Formula.Contains("A"))
+            if (ContextC.Formula.Contains("A"))
             {
-                context.TotalPoint += 5;
+                ContextC.TotalPoint += 5;
             }
         }
     }
@@ -93,11 +93,11 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
     // TerminalExpression
     class ConsultantExpression : RoleExpression//danışman
     {
-        public override void Interpret(Context context)
+        public override void Interpret(ContextC ContextC)
         {
-            if (context.Formula.Contains("C"))
+            if (ContextC.Formula.Contains("C"))
             {
-                context.TotalPoint += 10;
+                ContextC.TotalPoint += 10;
             }
         }
     }
@@ -105,11 +105,11 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
     // TerminalExpression
     class SeniorExpression : RoleExpression
     {
-        public override void Interpret(Context context)
+        public override void Interpret(ContextC ContextC)
         {
-            if (context.Formula.Contains("S"))
+            if (ContextC.Formula.Contains("S"))
             {
-                context.TotalPoint += 15;
+                ContextC.TotalPoint += 15;
             }
         }
     }
@@ -117,11 +117,11 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
     // TerminalExpression
     class DeveloperExpression : RoleExpression
     {
-        public override void Interpret(Context context)
+        public override void Interpret(ContextC ContextC)
         {
-            if (context.Formula.Contains("D"))
+            if (ContextC.Formula.Contains("D"))
             {
-                context.TotalPoint += 20;
+                ContextC.TotalPoint += 20;
             }
         }
     }
