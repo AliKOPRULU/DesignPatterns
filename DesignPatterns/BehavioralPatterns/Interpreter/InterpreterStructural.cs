@@ -11,7 +11,7 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
     {
         public static void Main(string[] args)
         {
-            Context context = new Context();
+            ContextS ContextS = new ContextS();
 
             // Usually a tree 
             ArrayList list = new ArrayList();
@@ -25,7 +25,7 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
             // Interpret
             foreach (AbstractExpression exp in list)
             {
-                exp.Interpret(context);
+                exp.Interpret(ContextS);
             }
 
 
@@ -33,7 +33,7 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
         }
     }
 
-    class Context
+    class ContextS
     {
 
     }
@@ -41,13 +41,13 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
     // The 'AbstractExpression' abstract class
     abstract class AbstractExpression
     {
-        public abstract void Interpret(Context context);
+        public abstract void Interpret(ContextS ContextS);
     }
 
     // The 'TerminalExpression' class
     class TerminalExpression : AbstractExpression
     {
-        public override void Interpret(Context context)
+        public override void Interpret(ContextS ContextS)
         {
             Console.WriteLine("Called Termial.Interpret()");
         }
@@ -56,7 +56,7 @@ namespace DesignPatterns.BehavioralPatterns.Interpreter
     // The 'NonterminalExpression' class
     class NonTerminalExpression : AbstractExpression
     {
-        public override void Interpret(Context context)
+        public override void Interpret(ContextS ContextS)
         {
             Console.WriteLine("Called NonTerminalExpression.Interpret()");
         }
