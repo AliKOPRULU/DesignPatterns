@@ -11,12 +11,12 @@ namespace DesignPatterns.BehavioralPatterns.Command
         public static void Main(string[] args)
         {
             Receiver receiver = new Receiver();
-            Command command = new ConcreteCommand(receiver);
-            Invoker invoker = new Invoker();//çağırma, başvurma
+            Command command = new ConcreteCommandS(receiver);
+            InvokerS InvokerS = new InvokerS();//çağırma, başvurma
 
             // Set and execute command
-            invoker.SetCommand(command);
-            invoker.ExecuteCommand();
+            InvokerS.SetCommand(command);
+            InvokerS.ExecuteCommand();
 
 
             Console.ReadKey();
@@ -44,9 +44,9 @@ namespace DesignPatterns.BehavioralPatterns.Command
         public abstract void Execute();
     }
 
-    class ConcreteCommand : Command
+    class ConcreteCommandS : Command
     {
-        public ConcreteCommand(Receiver receiver) : base(receiver)
+        public ConcreteCommandS(Receiver receiver) : base(receiver)
         {
         }
 
@@ -56,7 +56,7 @@ namespace DesignPatterns.BehavioralPatterns.Command
         }
     }
 
-    class Invoker
+    class InvokerS
     {
         private Command _command;
 

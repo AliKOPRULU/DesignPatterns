@@ -49,6 +49,7 @@
     <Compile Include="BehavioralPatterns\ChainofResponsibility\ChainofResponsibilityLog.cs" />
     <Compile Include="BehavioralPatterns\ChainofResponsibility\ChainofResponsibilityService.cs" />
     <Compile Include="BehavioralPatterns\ChainofResponsibility\ChainofResponsibilityStructural.cs" />
+    <Compile Include="BehavioralPatterns\Command\CommandCopyPaste.cs" />
     <Compile Include="BehavioralPatterns\Command\CommandStructural.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />
