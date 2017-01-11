@@ -53,6 +53,7 @@
     <Compile Include="BehavioralPatterns\Command\CommandCopyPaste.cs" />
     <Compile Include="BehavioralPatterns\Command\CommandPerson.cs" />
     <Compile Include="BehavioralPatterns\Command\CommandStructural.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\InterpreterStructural.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryProduct.cs" />
