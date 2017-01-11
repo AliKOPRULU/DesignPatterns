@@ -57,6 +57,8 @@
     <Compile Include="BehavioralPatterns\Interpreter\InterpreterProjectCost.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\InterpreterRomeNumber.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\InterpreterStructural.cs" />
+    <Compile Include="BehavioralPatterns\Iterator\IteratorStructural.cs" />
+    <Compile Include="BehavioralPatterns\Iterator\IteratorTakim.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryProduct.cs" />
