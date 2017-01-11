@@ -4,19 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.BehavioralPatterns.Command
+namespace DesignPatterns.BehavioralPatterns.CommandS
 {
-    class CommandStructural
+    class CommandSStructural
     {
         public static void Main(string[] args)
         {
             Receiver receiver = new Receiver();
-            Command command = new ConcreteCommandS(receiver);
+            CommandS CommandS = new ConcreteCommandSS(receiver);
             InvokerS InvokerS = new InvokerS();//çağırma, başvurma
 
-            // Set and execute command
-            InvokerS.SetCommand(command);
-            InvokerS.ExecuteCommand();
+            // Set and execute CommandS
+            InvokerS.SetCommandS(CommandS);
+            InvokerS.ExecuteCommandS();
 
 
             Console.ReadKey();
@@ -32,11 +32,11 @@ namespace DesignPatterns.BehavioralPatterns.Command
 
     }
 
-    abstract class Command
+    abstract class CommandS
     {
         protected Receiver receiver;
 
-        public Command(Receiver receiver)
+        public CommandS(Receiver receiver)
         {
             this.receiver = receiver;
         }
@@ -44,9 +44,9 @@ namespace DesignPatterns.BehavioralPatterns.Command
         public abstract void Execute();
     }
 
-    class ConcreteCommandS : Command
+    class ConcreteCommandSS : CommandS
     {
-        public ConcreteCommandS(Receiver receiver) : base(receiver)
+        public ConcreteCommandSS(Receiver receiver) : base(receiver)
         {
         }
 
@@ -58,16 +58,16 @@ namespace DesignPatterns.BehavioralPatterns.Command
 
     class InvokerS
     {
-        private Command _command;
+        private CommandS _CommandS;
 
-        public void SetCommand(Command command)
+        public void SetCommandS(CommandS CommandS)
         {
-            this._command = command;
+            this._CommandS = CommandS;
         }
 
-        public void ExecuteCommand()
+        public void ExecuteCommandS()
         {
-            _command.Execute();
+            _CommandS.Execute();
         }
     }
 
