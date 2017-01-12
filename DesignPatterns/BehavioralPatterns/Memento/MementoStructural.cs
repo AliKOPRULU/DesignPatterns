@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.BehavioralPatterns.Memento
+namespace DesignPatterns.BehavioralPatterns.MementoS
 {
-    class MementoStructural
+    class MementoSStructural
     {
         public static void Main(string[] args)
         {
@@ -15,13 +15,13 @@ namespace DesignPatterns.BehavioralPatterns.Memento
 
             // Store internal state
             Caretaker c = new Caretaker();
-            c.Memento = o.CreateMemento();
+            c.MementoS = o.CreateMementoS();
 
             // Continue changing originator
             o.State = "Off";
 
             // Restore saved state
-            o.SetMemento(c.Memento);
+            o.SetMementoS(c.MementoS);
 
             Console.ReadKey();
         }
@@ -42,26 +42,26 @@ namespace DesignPatterns.BehavioralPatterns.Memento
             }
         }
 
-        // Creates memento 
-        public Memento CreateMemento()
+        // Creates MementoS 
+        public MementoS CreateMementoS()
         {
-            return (new Memento(_state));
+            return (new MementoS(_state));
         }
 
         // Restores original state
-        public void SetMemento(Memento memnto)
+        public void SetMementoS(MementoS memnto)
         {
             Console.WriteLine("Restoring state...");
             State = memnto.State;
         }
     }
 
-    // The 'Memento' class 
-    class Memento
+    // The 'MementoS' class 
+    class MementoS
     {
         private string _state;
 
-        public Memento(string state)
+        public MementoS(string state)
         {
             this._state = state;
         }
@@ -76,12 +76,12 @@ namespace DesignPatterns.BehavioralPatterns.Memento
     // The 'Caretaker' class Caretaker:bakıcı, yönetici
     class Caretaker
     {
-        private Memento _memento;
+        private MementoS _MementoS;
 
-        public Memento Memento
+        public MementoS MementoS
         {
-            set { _memento = value; }
-            get { return _memento; }
+            set { _MementoS = value; }
+            get { return _MementoS; }
         }
     }
 
