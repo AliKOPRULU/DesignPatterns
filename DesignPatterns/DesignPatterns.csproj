@@ -67,6 +67,7 @@
     <Compile Include="BehavioralPatterns\Memento\MementoProduct.cs" />
     <Compile Include="BehavioralPatterns\Memento\MementoProspect.cs" />
     <Compile Include="BehavioralPatterns\Memento\MementoStructural.cs" />
+    <Compile Include="BehavioralPatterns\Observer\ObserverStructural.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryProduct.cs" />
