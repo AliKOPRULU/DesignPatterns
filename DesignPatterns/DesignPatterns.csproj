@@ -60,6 +60,7 @@
     <Compile Include="BehavioralPatterns\Iterator\IteratorProduct.cs" />
     <Compile Include="BehavioralPatterns\Iterator\IteratorStructural.cs" />
     <Compile Include="BehavioralPatterns\Iterator\IteratorTakim.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\MediatorAirport.cs" />
     <Compile Include="BehavioralPatterns\Mediator\MediatorStructural.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />
