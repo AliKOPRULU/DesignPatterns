@@ -63,6 +63,7 @@
     <Compile Include="BehavioralPatterns\Mediator\MediatorAirport.cs" />
     <Compile Include="BehavioralPatterns\Mediator\MediatorChat.cs" />
     <Compile Include="BehavioralPatterns\Mediator\MediatorStructural.cs" />
+    <Compile Include="BehavioralPatterns\Memento\MementoKisi.cs" />
     <Compile Include="BehavioralPatterns\Memento\MementoProduct.cs" />
     <Compile Include="BehavioralPatterns\Memento\MementoStructural.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
