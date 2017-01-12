@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DesignPatterns.BehavioralPatterns.Iterator
-{
+{//http://www.buraksenyurt.com/post/Tasarc4b1m-Desenleri-Iterator.aspx
     class IteratorProduct
     {
         public static void Main(string[] args)
@@ -30,6 +31,15 @@ namespace DesignPatterns.BehavioralPatterns.Iterator
                 Console.WriteLine(product.ToString());
             }
 
+            ProductList products2 = new ProductList();
+            products2[0] = new Product { ProductId = 1, Name = "330 ml Seramik Bardak", ListPrice = 12M };
+            products2[1] = new Product { ProductId = 2, Name = "1 Lt Cam Bardak", ListPrice = 12.5M };
+            products2[2] = new Product { ProductId = 3, Name = "50 cl Pet Şişe", ListPrice = 14.45M };
+
+            foreach (Product product in products2)
+            {
+                Console.WriteLine(product.ToString());
+            }
 
             Console.ReadKey();
         }
@@ -150,7 +160,35 @@ namespace DesignPatterns.BehavioralPatterns.Iterator
         #endregion
     }
 
+    class ProductList : IEnumerable<Product>
+    {
+        private List<Product> list = new List<Product>();
 
+        public Product this[int index]
+        {
+            get { return list[index]; }
+            set { list.Add(value); }
+        }
+
+        #region IEnumerable<Product> Members
+
+        public IEnumerator<Product> GetEnumerator()
+        {
+            foreach (Product product in list)
+            {
+                yield return product;
+            }
+        }
+
+        #endregion
+        #region IEnumerable Members
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
+    }
 
 
 
