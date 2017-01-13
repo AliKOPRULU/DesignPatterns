@@ -17,9 +17,9 @@ namespace DesignPatterns.BehavioralPatterns.State
             account.Deposit(500.0);
             account.Deposit(300.0);
             account.Deposit(550.0);
-            account.PayInterest();
-            account.Withdraw(2000.00);
-            account.Withdraw(1100.00);
+            account.PayInterest();//burada faiz işletiliyor yaklaşık 67 gelir geliyor
+            account.Withdraw(2000.00);//2000 çekilince (-) değer kalıyor
+            account.Withdraw(1100.00);//Hesap negatif çıkınca parantez içine alıyor dikkat et
 
 
 
