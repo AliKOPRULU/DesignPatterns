@@ -70,6 +70,7 @@
     <Compile Include="BehavioralPatterns\Observer\ObserverStock.cs" />
     <Compile Include="BehavioralPatterns\Observer\ObserverStructural.cs" />
     <Compile Include="BehavioralPatterns\Observer\ObserverUrun.cs" />
+    <Compile Include="BehavioralPatterns\State\StateSoket.cs" />
     <Compile Include="BehavioralPatterns\State\StateStructural.cs" />
     <Compile Include="BehavioralPatterns\State\StateVendingMachine.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
