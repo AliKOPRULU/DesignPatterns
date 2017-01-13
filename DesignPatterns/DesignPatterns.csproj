@@ -75,6 +75,7 @@
     <Compile Include="BehavioralPatterns\State\StateStructural.cs" />
     <Compile Include="BehavioralPatterns\State\StateVendingMachine.cs" />
     <Compile Include="BehavioralPatterns\Strategy\StrategyKripto.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\StrategyLog.cs" />
     <Compile Include="BehavioralPatterns\Strategy\StrategyStructural.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />
