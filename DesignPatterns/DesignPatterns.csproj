@@ -78,6 +78,7 @@
     <Compile Include="BehavioralPatterns\Strategy\StrategyLog.cs" />
     <Compile Include="BehavioralPatterns\Strategy\StrategyStructural.cs" />
     <Compile Include="BehavioralPatterns\Strategy\StrategyStudent.cs" />
+    <Compile Include="BehavioralPatterns\TemplateMethod\TemplateMethodStructural.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryProduct.cs" />
