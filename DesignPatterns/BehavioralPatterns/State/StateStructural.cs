@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.BehavioralPatterns.State
+namespace DesignPatterns.BehavioralPatterns.StateS
 {
-    class StateStructural
+    class StateSStructural
     {
         public static void Main(string[] args)
         {
-            // Setup context in a state
-            Context c = new Context(new ConcreteStateA());
+            // Setup context in a StateS
+            Context c = new Context(new ConcreteStateSA());
 
-            // Issue requests, which toggles state
+            // Issue requests, which toggles StateS
             c.Requets();
             c.Requets();
             c.Requets();
@@ -23,52 +23,52 @@ namespace DesignPatterns.BehavioralPatterns.State
         }
     }
 
-    abstract class State
+    abstract class StateS
     {
         public abstract void Handle(Context context);
     }
 
-    class ConcreteStateA : State
+    class ConcreteStateSA : StateS
     {
         public override void Handle(Context context)
         {
-            context.State = new ConcreteStateB();
+            context.StateS = new ConcreteStateSB();
 
         }
     }
 
-    class ConcreteStateB : State
+    class ConcreteStateSB : StateS
     {
         public override void Handle(Context context)
         {
-            context.State = new ConcreteStateA();
+            context.StateS = new ConcreteStateSA();
         }
     }
 
 
     class Context
     {
-        private State _state;
+        private StateS _StateS;
 
-        public Context(State state)
+        public Context(StateS StateS)
         {
-            this.State = state;
+            this.StateS = StateS;
         }
 
-        // Gets or sets the state
-        public State State
+        // Gets or sets the StateS
+        public StateS StateS
         {
-            get { return _state; }
+            get { return _StateS; }
             set
             {
-                _state = value;
-                Console.WriteLine("State: " + _state.GetType().Name);
+                _StateS = value;
+                Console.WriteLine("StateS: " + _StateS.GetType().Name);
             }
         }
 
         public void Requets()
         {
-            _state.Handle(this);
+            _StateS.Handle(this);
         }
     }
 
