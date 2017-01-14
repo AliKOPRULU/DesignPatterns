@@ -82,6 +82,8 @@
     <Compile Include="BehavioralPatterns\TemplateMethod\TemplateMethodDbAccess.cs" />
     <Compile Include="BehavioralPatterns\TemplateMethod\TemplateMethodGameReporter.cs" />
     <Compile Include="BehavioralPatterns\TemplateMethod\TemplateMethodStructural.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\VisitorStructural.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\VisitorTelefon.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryAnimal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryCar.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryProduct.cs" />
